@@ -15,10 +15,11 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = '';
-	public $db = 'cg2';
-	public $dbprefix = 'hjfgu_';
+	#public $secret = 'IY7MDOR90m4WEg11';
+	public $db = 'cgt';
+	public $dbprefix = 'isrk1_';
 	public $live_site = '';
-	public $secret = 'IY7MDOR90m4WEg11';
+	public $secret = '9qZqmJblTL6Fhlx8';
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
@@ -42,7 +43,7 @@ class JConfig {
 	public $caching = '0';
 	public $cache_handler = 'file';
 	public $cachetime = '15';
-	public $MetaDesc = '';
+	public $MetaDesc = 'test site for cleftgoose';
 	public $MetaKeys = '';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';

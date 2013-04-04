@@ -245,6 +245,7 @@ div[id*=jsn-pos-stick-right] {
 /* =============== LAYOUT - HEADER AREA =============== */
 #jsn-logo {
 	float: left;
+	padding: 15px 0;
 }
 #jsn-logo a {
 	line-height: 100%;
