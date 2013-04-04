@@ -1,0 +1,123 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* ============================== DEFAULT HTML ============================== */
+a {
+	color: #389ED1;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-menu {
+	background: #408ebc url(../../images/colors/blue/bg-mainmenu.png) left bottom repeat-x;
+}
+/* =============== LAYOUT - CONTENT AREA =============== */
+#jsn-gotoplink {
+	background-color: #3285b6;
+	color: #bbdef3;
+}
+#jsn-gotoplink:hover {
+	background: #236993;	
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - LINK STYLES =============== */
+/* ----- ACTION LINK ----- */
+.link-action {
+	border-bottom: 1px dotted #389ED1;
+}
+.link-action:hover {
+	background-color: #389ED1;
+}
+/* =============== TYPOGRAPHY - TABLE STYLES =============== */
+.sectiontableheader {
+	background-color: #408EBC;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- GENERAL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li {
+	border-right: 1px solid #45a4dc;
+}
+div.jsn-modulecontainer ul.menu-mainmenu li a {
+	color: #E0F5FF;
+	border-right: 1px solid #0072ab;
+}
+body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-mainmenu > li {
+	border-left: 1px solid #45A4DC;
+}
+body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-mainmenu li a {
+	border-left: 1px solid #0072AB;
+}
+/* ----- 1st LEVEL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu ul {
+	background-color: #0088CC;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li a {
+	border-top: 1px solid #009EE9;
+	border-bottom: 1px solid #0070A6;
+	border-left: 1px solid #0070A6;
+	border-right: 1px solid #0070A6;
+	color: #e0f5ff;
+}
+body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-mainmenu ul li a {
+	border-left: none;
+	border-right: 1px solid #0070A6;
+}
+/* ----- HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu ul li:hover > a {
+	border-top-color: #007CB9;
+	background-color: #007CB9;
+	color: #DDF2FF;
+}
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu li.active > a {
+	color: #FFF;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li.active > a {
+	border-top-color: #007CB9;
+	background-color: #007CB9;
+	color: #FFF;
+}
+/* =============== MENU - TREE MENU =============== */
+/* ----- CURRENT / HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-treemenu li a:hover,
+div.jsn-modulecontainer ul.menu-treemenu li a.current,
+div.jsn-modulecontainer ul.menu-treemenu ul li a.current:hover {
+	color: #fff;
+	background-color: #1087c2;
+}
+/* ============================== MODULE STYLES ============================== */
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+/* ----- RICHBOX-2 ----- */
+div.richbox-2 h3.jsn-moduletitle {
+	background: url(../../images/colors/blue/bg-title-richbox-2.png) left bottom repeat-x #0087CA;
+}
+/* ----- SOLID-2 ----- */
+div.solid-2 h3.jsn-moduletitle {
+	color: #0088CC;
+}
+/* ----- LIGHTBOX-2 ----- */
+div.lightbox-2 h3.jsn-moduletitle {
+	background: url(../../images/colors/blue/bg-title-lightbox-2.png) repeat-x left bottom;
+	color: #0088CC;
+}
+#jsn-pos-left div.lightbox-2 div.jsn-modulecontainer_inner,
+#jsn-pos-right div.lightbox-2 div.jsn-modulecontainer_inner {
+	background: url(../../images/colors/blue/bg-lightbox-2.png) left bottom repeat-x #F0FAFF;
+}
+div.jsn-modulecontainer.lightbox-2 ul.menu-sidemenu > li {
+    border-bottom: 1px solid #A6E2FF;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
+/* PAGE PAGINATION */
+ul.jsn-pagination li.navigation-page span {
+	background-color: #4786BE;
+}
+/* =============== JOOMLA! EXTENSIONS - MOD_BREADCRUMB =============== */
+span.breadcrumbs span.current,
+.breadcrumb li span + span {
+	color: #389ED1;
+}
