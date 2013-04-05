@@ -88,7 +88,7 @@ $images = json_decode($this->item->images);
 			<?php if ($params->get('show_publish_date')) : ?>
 				<dd>
 					<div class="published">
-						<i class="icon-calendar"></i> <?php echo JText::sprintf('COM_CONTENT_PUBLISHED_DATE_ON', JHtml::_('date', $this->item->publish_up, JText::_('DATE_FORMAT_LC3'))); ?>
+						<?php if ($params->get('show_icons')) : ?> <i class="icon-calendar"></i> <?php endif; ?> <?php echo JText::sprintf('COM_CONTENT_PUBLISHED_DATE_ON', JHtml::_('date', $this->item->publish_up, JText::_('DATE_FORMAT_LC3'))); ?>
 					</div>
 				</dd>
 			<?php endif; ?>
@@ -97,14 +97,14 @@ $images = json_decode($this->item->images);
 				<?php if ($params->get('show_modify_date')) : ?>
 					<dd>
 						<div class="modified">
-							<i class="icon-calendar"></i> <?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
+							<?php if ($params->get('show_icons')) : ?> <i class="icon-calendar"></i> <?php endif; ?> <?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
 						</div>
 					</dd>
 				<?php endif; ?>
 				<?php if ($params->get('show_create_date')) : ?>
 					<dd>
 						<div class="create">
-							<i class="icon-calendar"></i> <?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
+							<?php if ($params->get('show_icons')) : ?> <i class="icon-calendar"></i> <?php endif; ?> <?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
 						</div>
 					</dd>
 				<?php endif; ?>
@@ -112,7 +112,7 @@ $images = json_decode($this->item->images);
 				<?php if ($params->get('show_hits')) : ?>
 					<dd>
 						<div class="hits">
-							  <i class="icon-eye-open"></i> <?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
+							  <?php if ($params->get('show_icons')) : ?> <i class="icon-calendar"></i> <?php endif; ?> <?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
 						</div>
 					</dd>
 				<?php endif; ?>
@@ -184,7 +184,7 @@ $images = json_decode($this->item->images);
 				<?php if ($params->get('show_publish_date')) : ?>
 					<dd>
 						<div class="published">
-							<i class="icon-calendar"></i> <?php echo JText::sprintf('COM_CONTENT_PUBLISHED_DATE_ON', JHtml::_('date', $this->item->publish_up, JText::_('DATE_FORMAT_LC3'))); ?>
+							<?php if ($params->get('show_icons')) : ?> <i class="icon-calendar"></i> <?php endif; ?> <?php echo JText::sprintf('COM_CONTENT_PUBLISHED_DATE_ON', JHtml::_('date', $this->item->publish_up, JText::_('DATE_FORMAT_LC3'))); ?>
 						</div>
 					</dd>
 				<?php endif; ?>
@@ -192,14 +192,14 @@ $images = json_decode($this->item->images);
 
 			<?php if ($params->get('show_create_date')) : ?>
 				<dd>
-					<div class="create"><i class="icon-calendar">
+					<div class="create"><?php if ($params->get('show_icons')) : ?> <i class="icon-calendar"></i> <?php endif; ?>
 						</i> <?php echo JText::sprintf('COM_CONTENT_CREATED_DATE_ON', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
 					</div>
 				</dd>
 			<?php endif; ?>
 			<?php if ($params->get('show_modify_date')) : ?>
 				<dd>
-					<div class="modified"><i class="icon-calendar">
+					<div class="modified"><?php if ($params->get('show_icons')) : ?> <i class="icon-calendar"></i> <?php endif; ?>
 						</i> <?php echo JText::sprintf('COM_CONTENT_LAST_UPDATED', JHtml::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC3'))); ?>
 					</div>
 				</dd>
@@ -207,7 +207,7 @@ $images = json_decode($this->item->images);
 			<?php if ($params->get('show_hits')) : ?>
 				<dd>
 					<div class="hits">
-				  		<i class="icon-eye-open"></i> <?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
+				  		<?php if ($params->get('show_icons')) : ?> <i class="icon-calendar"></i> <?php endif; ?> <?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
 					</div>
 				</dd>
 			<?php endif; ?>
